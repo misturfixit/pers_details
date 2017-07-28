@@ -44,17 +44,18 @@ post '/surname' do
 end	
 
 get '/visage' do
+	"hellooooo"
 	frstn = params[:frstn]
-	s_name = params[:surname]
+	s_name = params[:s_name]
 	erb :visage, locals: {frstn: frstn, s_name: s_name} 
 end
 
 
-post '/visage' do
+post '/fur_orbs' do
 	fur = params[:fur]
  	orbs = params[:orbs]
  	fname = params[:frstn]
- 	surname = params[:s_name]
+ 	s_name = params[:s_name]
  	redirect '/numb?vis=' + s_name + "&frstn=" + frstn 
 end
  
