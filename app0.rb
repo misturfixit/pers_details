@@ -6,7 +6,7 @@ get '/' do
 end	
 
 def login(username, password)
-	if username == "Joe" && password == "Bro"
+	if username == "Joe" && password == "Pwd"
 		redirect '/name'	
 	else
 		redirect '/?msg=INCORRECT USERNAME/PASSWORD..
@@ -40,22 +40,20 @@ end
 post '/surname' do
 	s_name = params[:s_name]
 	frstn = params[:frstn]
-	redirect '/visage?s_name=' + s_name + "&frstn=" + frstn 
+	redirect '/fur?s_name=' + s_name + "&frstn=" + frstn 
 end	
 
-get '/visage' do
-	"hellooooo"
+get '/fur' do
 	frstn = params[:frstn]
 	s_name = params[:s_name]
 	erb :visage, locals: {frstn: frstn, s_name: s_name} 
 end
 
 
-post '/fur_orbs' do
+post '/fur' do
 	fur = params[:fur]
- 	orbs = params[:orbs]
  	fname = params[:frstn]
  	s_name = params[:s_name]
- 	redirect '/numb?vis=' + s_name + "&frstn=" + frstn 
+ 	redirect '/numb?vis=' + s_name + "&frstn=" + frstn + "&fur"
 end
  
