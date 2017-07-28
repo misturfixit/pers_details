@@ -1,11 +1,12 @@
 <%=frstn%> <%=s_name%>
+
 ?What be the color of thy hair?
-<form method = "post" action = "fur">
-	<input type="text" name="furry" required>
+<form method = "post" action = "furry">
+	<input type="text" name="fur" required>
 	Submit
 	<input type="submit" value="YETANOTHERBUTTON" required>
-	<input type="hidden" name="frstn" value="%=<frstn%>">
-	<input type="hidden" name="s_name" value="%=s_name">
+	<input type="hidden" name="frstn" value="<%=frstn%>">
+	<input type="hidden" name="s_name" value="<%=s_name%>">
 	</form>
 
 
