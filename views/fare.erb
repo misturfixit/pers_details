@@ -1,0 +1,21 @@
+<%=frstn%> <%=s_name%> <%=fur%> <%=orbs%> <%=yrs%> 
+
+
+<h1> What be thy fare of choice? </h1>
+
+<form method="post" action="food&">
+ 	<h3>Meal:?</h3>
+ 	<input type="text" name="grub" required> 
+ 	
+ 	<h3>Libations:?</h3>
+ 	<input type="text" name="libs" reqired>
+ 	Do Tell:?
+ 	<input type="submit" value="shhhh">
+
+ 	<input type="hidden" name="frstn" value="<%=frstn%>">
+ 	<input type="hidden" name="s_name" value="<%=s_name%>">
+ 	<input type="hidden" name="fur" value="<%=fur%>">
+ 	<input type="hidden" name="orbs" value="<%=orbs%>">
+ 	<input type="hidden" name="yrs" value="<%=yrs%>">
+ 	
+ </form>

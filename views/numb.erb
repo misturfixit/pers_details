@@ -1,15 +1,23 @@
-<%=frstn%> <%=s_name%> <%=fur%> <%=orbs%>
+<%=frstn%> <%=s_name%> <%=fur%> <%=orbs%> <%=yrs%> <%=grub%>  <%=libs%>
 
-	Doth thou preffer 3 numbers to the lot?
+	<h1>Doth thou preffer 3 numbers to the lot?</h1>
+
 <form method="post" action="numbers">
+	
+	<h3>Lucky</h3>
  	<input type="number" name="n1" required> 
+ 	<h3>Ucky</h3>
  	<input type="number" name="n2" required>
+ 	<h3>Picky</h3>
  	<input type="number" name="n3" required>
- 	Pushdabutton
- 	<input type="submit" value="ALSOABUTTON">
+ 	
+ 	Feel Fortunate:?
+ 	<input type="submit" value="ALSOBUTTON">
+ 	
  	<input type="hidden" name="frstn" value="<%=frstn%>">
  	<input type="hidden" name="s_name" value="<%=s_name%>">
  	<input type="hidden" name="fur" value="<%=fur%>">
  	<input type="hidden" name="orbs" value="<%=orbs%>">
+ 	<input type="hidden" name="yrs" value="<%=yrs%>">
  </form>
 
