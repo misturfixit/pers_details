@@ -110,18 +110,17 @@ get '/numbers' do
  	s_name = params[:s_name]
  	erb :numb, locals: {frstn: frstn, s_name: s_name, fur: fur, orbs: orbs, yrs: yrs, grub: grub, libs: libs} 
 end
-
-
-post '/numbers' do
-	 n1 = params[:n1]
-	 n2 = params[:n2]
-	 n3 = params[:n3]
 # def consilidation
 # 	nums = [:n1, :n2, :n3]
 #    nums = params[:nums]
 # end
 
 	#nums = params[:nums]
+
+post '/numbers' do
+	nm1 = params[:nm1]
+	nm2 = params[:nm2]
+	nm3 = params[:nm3]
 	grub = params[:grub]
 	libs = params[:libs] 
    yrs = params[:yrs]
@@ -129,14 +128,14 @@ post '/numbers' do
 	fur = params[:fur]
  	frstn = params[:frstn]
  	s_name = params[:s_name]
- 	redirect '/res?n1=' + n1 + "&n2=" n2 + "&n3=" + n3 + "&grub=" + grub + "&libs=" + libs + "&yrs=" + yrs + "&orbs=" + orbs + "&fur=" + fur + "&s_name=" + s_name + "&frstn=" + frstn 
+ 	redirect '/res?nm1=' + nm1 + "&nm2=" + nm2 + "&nm3=" + nm3 + "&grub=" + grub + "&libs=" + libs + "&yrs=" + yrs + "&orbs=" + orbs + "&fur=" + fur + "&s_name=" + s_name + "&frstn=" + frstn 
 end
 
 get '/res' do
 	#nums = params[:nums]
-	n1 = params[:n1]
-   n2 = params[:n2]
-	n3 = params[:n3]
+	nm1 = params[:nm1]
+   nm2 = params[:nm2]
+	nm3 = params[:nm3]
 	grub = params[:grub]
 	libs = params[:libs] 
    yrs = params[:yrs]
@@ -144,7 +143,7 @@ get '/res' do
 	fur = params[:fur]
  	frstn = params[:frstn]
  	s_name = params[:s_name]
-	erb :results, locals: {frstn: frstn, s_name: s_name, fur: fur, orbs: orbs, yrs: yrs, grub: grub, libs: libs, n1: n1, n2: n2, n3: n3} 
+	erb :results, locals: {frstn: frstn, s_name: s_name, fur: fur, orbs: orbs, yrs: yrs, grub: grub, libs: libs, nm1: nm1, nm2: nm2, nm3: nm3} 
 end 	
 
 
